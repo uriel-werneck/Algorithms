@@ -1,4 +1,5 @@
 def binary_search(array: list, value: int) -> int:
+    """ Time Complexity: O(log(n)) """
     left = 0
     right = len(array) - 1
     
@@ -10,5 +11,4 @@ def binary_search(array: list, value: int) -> int:
             right = mid - 1
         elif array[mid] < value:
             left = mid + 1
-    
     return -1
